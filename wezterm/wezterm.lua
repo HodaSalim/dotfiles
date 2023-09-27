@@ -1,20 +1,16 @@
--- Pull in the wezterm API
-local wezterm = require 'wezterm'
-
--- This table will hold the configuration.
-local config = {}
-
--- In newer versions of wezterm, use the config_builder which will
--- help provide clearer error messages
-if wezterm.config_builder then
-  config = wezterm.config_builder()
-end
-
--- This is where you actually apply your config choices
-config.font = wezterm.font('Recursive Mono Linear Static', {weight = "Medium", ligatures = true})
-config.line_height = 1.2
-config.font_size = 20
--- For example, changing the color scheme:
-config.color_scheme = 'Kanagawa (Gogh)'
--- and finally, return the configuration to wezterm
-return config
+local wezterm = require("wezterm")
+return {
+	font = wezterm.font("Recursive Mono Linear Static", {weight="Medium", stretch="Normal", style="Normal"}),
+    font_size = 20,
+    line_height = 1.2,
+	enable_tab_bar = true,
+	hide_tab_bar_if_only_one_tab = true,
+	show_tab_index_in_tab_bar = false,
+	automatically_reload_config = true,
+	color_scheme = "rose-pine",
+	window_background_opacity = 1,
+    window_decorations = "RESIZE",
+	enable_wayland = false,
+    tab_bar_at_bottom = true,
+    use_fancy_tab_bar = false
+}

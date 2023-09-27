@@ -84,15 +84,15 @@ _G.packer_plugins = {
     path = "/Users/unicorn/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
+  ["formatter.nvim"] = {
+    loaded = true,
+    path = "/Users/unicorn/.local/share/nvim/site/pack/packer/start/formatter.nvim",
+    url = "https://github.com/mhartington/formatter.nvim"
+  },
   harpoon = {
     loaded = true,
     path = "/Users/unicorn/.local/share/nvim/site/pack/packer/start/harpoon",
     url = "https://github.com/ThePrimeagen/harpoon"
-  },
-  kanagawa = {
-    loaded = true,
-    path = "/Users/unicorn/.local/share/nvim/site/pack/packer/start/kanagawa",
-    url = "https://github.com/rebelot/kanagawa.nvim"
   },
   ["lsp-zero.nvim"] = {
     loaded = true,
@@ -133,6 +133,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/unicorn/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
+  },
+  ["rose-pine"] = {
+    loaded = true,
+    path = "/Users/unicorn/.local/share/nvim/site/pack/packer/start/rose-pine",
+    url = "https://github.com/rose-pine/neovim"
   },
   ["telescope.nvim"] = {
     loaded = true,

@@ -11,8 +11,11 @@ return require('packer').startup(function(use)
 		-- or                            , branch = '0.1.x',
 		requires = { {'nvim-lua/plenary.nvim'} }
 	}
-    use {"rebelot/kanagawa.nvim" , as = "kanagawa"}
+    --use {'sainnhe/gruvbox-material', as = 'gruvbox'}
+    --use {"rebelot/kanagawa.nvim" , as = "kanagawa"}
+    use { 'mhartington/formatter.nvim' }
 	use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
+    use({ 'rose-pine/neovim', as = 'rose-pine' })
 	use('ThePrimeagen/harpoon')
 	use('mbbill/undotree')
 	use('tpope/vim-fugitive')
