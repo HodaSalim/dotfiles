@@ -1,6 +1,9 @@
 if status is-interactive
     # Commands to run in interactive sessions can go here
 end
+
+nvm use lts
+
 starship init fish | source
 # Setting PATH for Python 3.12
 # The original version is saved in /Users/unicorn/.config/fish/config.fish.pysave
@@ -31,6 +34,10 @@ abbr vi nvim
 abbr v nvim .
 
 alias lazygit "TERM=xterm-256color command lazygit"
-abbr gg lazygit
+abbr lg lazygit
 
 
+
+# Setting PATH for Python 3.12
+# The original version is saved in /Users/unicorn/.config/fish/config.fish.pysave
+set -x PATH "/Library/Frameworks/Python.framework/Versions/3.12/bin" "$PATH"
