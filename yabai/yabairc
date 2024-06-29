@@ -41,11 +41,11 @@ yabai -m config window_gap 12
 #yabai -m space 6 --label 6
 
 yabai -m rule --add app="^Calendar$" space=1
-yabai -m rule --add app="^Things$" space=1
+yabai -m rule --add app="^Obsidian$" space=1
 yabai -m rule --add app="^Arc$" space=2
 yabai -m rule --add app="^kitty$" space=3
-yabai -m rule --add app="^Obsidian$" space=4
-yabai -m rule --add app="^Zotero$" space=5
+yabai -m rule --add app="^Zotero$" space=4
+yabai -m rule --add app="^VLC$" space=5
 yabai -m rule --add app="^Discord$" space=6
 
 yabai -m rule --add app="^System Preferences$" manage=off
